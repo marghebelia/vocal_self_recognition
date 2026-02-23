@@ -16,21 +16,38 @@ This online repository contains the data processing and analysis scripts underly
 _References_audios_bb.xlsx_ contains the demographic details about the participants (e.g., age, languages spopken, sex, date of birth) as well as details and notes concerning the test (e.g., date, timing of f0 modification relative to the onset of the recording, etc). It includes the following information relevant for the study:
 * _BB_ : unique participant ID
 * Whether the participant was successfully tested or not due to technical errors or other reasons (_Tech_error_ , _No_data_ , _Tested_)
-* _DDT_ = date of test
-* _DDN_ = date of birth
-* _age_ = age in decimal months
-* _Mois_ = age in months
-* _sexe_ = sex
-* _Timing_modif_ = the timing in mm:ss when the f0 mdification was applied
-* _timing_modif_sec_ = the above but in seconds  
-* _Type_modif_ = whether the f0 was shifted up (100) or down (-100) for that participant
-*  _Ordre_miroir_ = order of execution of the mirror task and interaction, which was counterbalanced
-*  Demographic information such as whether the child was exposed to multiple languages or not (_monolingue_), whether they could hold their head up (_tete_) and sitting up (_assis_), whether they locomoted autonomously (_deplacement_), information about the type of vocalisations they produced (_vocalisation_), whether the child had had ear infections or hearing problems (_audition_pb_)
-*  _Mirror_recognition_ =  Whether the child touched the red mark on their forehead, showing signs of recognising the reflection as themselves (0 = No, 1 = Yes).  
+* _DDT_ : date of test
+* _DDN_ : date of birth
+* _age_ : age in decimal months
+* _Mois_ : age in months
+* _sexe_ : sex
+* _Timing_modif_ : the timing in mm:ss when the f0 mdification was applied
+* _timing_modif_sec_ : the above but in seconds  
+* _Type_modif_ : whether the f0 was shifted up (100) or down (-100) for that participant
+*  _Ordre_miroir_ : order of execution of the mirror task and interaction, which was counterbalanced
+*  Demographic information such as whether the child was exposed to multiple languages or not (_monolingue_), whether they could hold their head up (_tete_) and sitting up (_assis_), whether they locomoted autonomously (_deplacement_), information about the type of vocalisations they produced (_vocalisation_), whether the child had had ear infections or hearing problems (_audition_pb_). This information was collected in a questionnaire which is part of the laboratory’s standard intake protocol, to collect background information for multiple ongoing studies.
+*  _Mirror_recognition_ :  Whether the child touched the red mark on their forehead, showing signs of recognising the reflection as themselves (0 = No, 1 = Yes).  
 
 _N_sounds_details.csv_ is generated at the end of Script 1 and contains the start and end times of parent and child vocalisations and the vocalisation type, the phase in which it was produced (BL: baseline - before f0 modification or EXP: experimental - after f0 modification). It does not yet include the f0, which is extracted in Script 2 based on this file. 
 
-_N_f0_HNR_RMS.csv_ is the final dataset generated at the end of Script 2, containing the duration, start and end times of each vocalisation, the phase in which it was produced (baseline or experimental), the vocalisation type, and who produced it (i.e., baby or mum). It also includes the average f0 for each vocalisation and the average f0 per phase per infant, along with demographic details for each participant, including age, linguistic background and other relevant information. Script 3 runs on this file.
+_N_f0_HNR_RMS.csv_ is the final dataset generated at the end of Script 2, used to run the main analyses. Relevant information is included in the following columns:
+* _file_ : the audio filename;
+* _start_times_ : start time of each vocalisation in seconds.milliseconds from the start of the audio recording
+* _stop_times_ : end time of each vocalisation in seconds.milliseconds from the start of the audio recording
+* _duration_ : the duration of the vocalisation
+* _phase_ : either baseline (BL) or experimental (EXP)
+* _who_ : dentifies the producer of the vocalisation, namely the infant (_B_), the caregiver (_M_), overlapping vocalisations from both (_CoV_), two non-overlapping vocalisations within the same segment (_T_). The latter category occurred mainly in the first phase of the study, when audio files were segmented using an automatic machine learning algorithm (https://github.com/LAAC-LSCP/VTC), before we transitioned to manual coding, which proved more reliable for our purposes and our kind of data.
+* _voc_type_ : the type of vocalisation being produced by the infant, based on the classification in Buder et al. (2013).
+* Background information collected via the questionnaire upon participant arrival at the lab (see above).
+* _cond_ : condition (p100 = upward, m100 = downward, neutre = neutral)
+* _f0m_NM_ : the average f0 over each individual vocalisation as produced by the child
+* _f0sd_NM_ : the standard deviation of f0 over each individual vocalisation as produced by the infant
+* _f0m_M_ : the average f0 over each individual vocalisation played back to the child
+* _f0sd_M_ : the standard deviation of f0 over each individual vocalisation played back to the infant
+* _f0c_NM_ : the average f0 calculated over all vocalisations in each phase as produced by the infant (as in the Main Analysis)
+* _f0c_M_ : the average f0 calculated over all vocalisations in each phase played back to the infant (as in the Main Analysis) 
+
+It also includes the average f0 for each vocalisation and the average f0 per phase per infant, along with demographic details for each participant, including age, linguistic background and other relevant information. Script 3 runs on this file.
 
 _N72_f0_overtime_ contains the 
 
@@ -42,8 +59,6 @@ _MT_comp.csv_ reports where the child was looking at each timepoint during durin
 * _FPS_ = frames per second;
 * _cam_n_b_ = the camera where the gaze was captured (as two cameras were used to ensure that the direction of the child's gaze was always visible)
 * _bb_nb_ = the participant unique ID
-
- 
 
 ### Plot analysis
 This folder (contained in "Datasets") includes the figures shown in the manuscript, generated by Script 3. 
