@@ -51,7 +51,7 @@ R code:
 * _f0c_M_ : the average f0 calculated over all vocalisations in each phase played back to the infant (used in the Main Analysis)
 * _f0cSD_NM_ : the standard deviation of f0 all vocalisations in each phase as produced by the infant (used in the Main Analysis)
 * _f0cSD_M_ : the standard deviation of f0 all vocalisations in each phase played back to the infant (used in the Main Analysis)
-* Average HNR of each vocalisation produced by the child (_RMS_NM_) or played back to them (_HNR_M_)
+* Average HNR of each vocalisation produced by the child (_HNR_NM_) or played back to them (_HNR_M_)
 * Average RMS of each vocalisation produced by the child (_RMSm_NM_) or played back to them (_RMSm_M_)
 
 **MT_comp.csv** reports where the child was looking at each timepoint during during the mirror task. It includes the following columns:
