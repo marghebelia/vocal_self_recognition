@@ -43,10 +43,10 @@ R code:
 * _voc_type_ : the type of vocalisation being produced by the infant, based on the classification in Buder et al. (2013)
 * Background information collected via the questionnaire upon participant arrival at the lab (see above)
 * _cond_ : condition (p100 = upward, m100 = downward, neutre = neutral)
-* _f0m_NM_ : the average f0 over each individual vocalisation as produced by the child
-* _f0sd_NM_ : the standard deviation of f0 over each individual vocalisation as produced by the infant
-* _f0m_M_ : the average f0 over each individual vocalisation played back to the child
-* _f0sd_M_ : the standard deviation of f0 over each individual vocalisation played back to the infant
+* _f0m_NM_ : the average f0 of individual vocalisations (non-modified)
+* _f0sd_NM_ : the f0 standard deviation of individual vocalisations (non-modified)
+* _f0m_M_ : the average f0 of individual vocalisations (modified)
+* _f0sd_M_ : the f0 standard deviation of individual vocalisations (modified)
 * _f0c_NM_ : the average f0 calculated over all vocalisations in each phase as produced by the infant (used in the Main Analysis)
 * _f0c_M_ : the average f0 calculated over all vocalisations in each phase played back to the infant (used in the Main Analysis)
 * _f0cSD_NM_ : the standard deviation of f0 all vocalisations in each phase as produced by the infant (used in the Main Analysis)
