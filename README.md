@@ -16,7 +16,7 @@ R code:
 
 ### Datasets
 
-**References_audios_bb.xlsx** contains the demographic details about the participants (e.g., age, languages spopken, sex, date of birth) as well as details and notes concerning the test (e.g., date, timing of f0 modification relative to the onset of the recording, etc). It includes the following information relevant for the study:
+**References_audios_bb.xlsx** includes the following information relevant for the study:
 * _BB_ : unique participant ID
 * Whether the participant was successfully tested or not due to technical errors or other reasons (_Tech_error_ , _No_data_ , _Tested_)
 * _age_ : age in decimal months
