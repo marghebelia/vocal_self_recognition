@@ -1,4 +1,4 @@
-This online repository contains the data processing and analysis scripts underlying the article entitled ‘Infants recognise their own voice well before recognising their own face’, as well as the anonymised tabulated data associated with this work. 
+This online repository contains the data processing and analysis scripts underlying the article entitled ‘Infants recognize their own voice well before recognizing their own face’, as well as the anonymized tabulated data associated with this work. 
 
 ## Repository structure
 
