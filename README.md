@@ -38,7 +38,6 @@ R code:
 * _phase_ : either baseline (BL) or experimental (EXP)
 * _who_ : who uttered the vocalisation, namely the infant (_B_) or the caregiver (_M_), or whether there were overlapping vocalisations from both (_CoV_), or two non-overlapping vocalisations within the same segment (_T_). The latter category occurred mainly in the first phase of the study, when audio files were segmented using an automatic machine learning algorithm (https://github.com/LAAC-LSCP/VTC), before we transitioned to manual coding, which proved more reliable for our purposes and our kind of data.
 * _voc_type_ : the type of vocalisation being produced by the infant, based on the classification in Buder et al. (2013)
-* Background information collected via the questionnaire upon participant arrival at the lab (see above)
 * _cond_ : condition (p100 = upward, m100 = downward, neutre = neutral)
 * _f0m_NM_ : the average f0 of individual vocalisations (non-modified)
 * _f0sd_NM_ : the f0 standard deviation of individual vocalisations (non-modified)
