@@ -30,7 +30,7 @@ R code:
 
 **N_sounds_details.csv** is generated at the end of Script 1 and contains the start and end times of parent and child vocalisations and the vocalisation type, the phase in which it was produced (BL: baseline, before f0 modification or EXP: experimental, after f0 modification). It does not yet include the f0, which is extracted in Script 2. This file contains the same information as _N_f0_HNR_RMS.csv_ (see below) minus the information relative to the f0, HNR and RMS.
 
-**N72_f0_HNR_RMS.csv** is the final dataset generated at the end of Script 2. Script 3 runs on this file. Relevant information is included in the following columns:
+**N_f0_HNR_RMS.csv** is the final dataset generated at the end of Script 2. Script 3 runs on this file. Relevant information is included in the following columns:
 * _file_ : the audio filename
 * _start_times_ : start time of each vocalisation in seconds from the start of the audio recording
 * _stop_times_ : end time of each vocalisation in seconds from the start of the audio recording
