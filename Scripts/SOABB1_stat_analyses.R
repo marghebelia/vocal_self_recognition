@@ -8,10 +8,10 @@ options(contrasts=c("contr.sum","contr.poly"))
 require(nlme)         ## for lme()
 
 ### READ DATA
-dc<-read.csv("C:/Users/Margherita/Desktop/SOA_Projet/paper1/currbio/aug_2026/aug_submission/final_sub/new_codes/N72_concat.csv", header=T, sep=";", dec = ".")
-df<-read.csv("C:/Users/Margherita/Desktop/SOA_Projet/paper1/currbio/aug_2026/aug_submission/final_sub/new_codes/N72_B.csv", header=T, sep=";", dec = ".")
-ph<-read.csv("C:/Users/Margherita/Desktop/SOA_Projet/paper1/currbio/aug_2026/aug_submission/final_sub/new_codes/N72_phases.csv", header=T, sep=";", dec = ".")
-ov <- read.csv("C:/Users/Margherita/Desktop/for_github_for_paper/SOABB1_working/Datasets/N72_f0_HNR_RMS.csv", header=T, sep=";", dec = ".")
+dc<-read.csv("C:/Users/Margherita/Documents/GitHub/SOABB1/Scripts/N72_concat.csv", header=T, sep=";", dec = ".")
+df<-read.csv("C:/Users/Margherita/Documents/GitHub/SOABB1/Scripts/N72_B.csv", header=T, sep=";", dec = ".")
+ph<-read.csv("C:/Users/Margherita/Documents/GitHub/SOABB1/Scripts/N72_phases.csv", header=T, sep=";", dec = ".")
+ov <- read.csv("C:/Users/Margherita/Documents/GitHub/SOABB1/Datasets/N72_f0_HNR_RMS.csv", header=T, sep=";", dec = ".")
 ov_exp <- ov[ ov$cond != "neutre", ] #remove the neutral group as no modification
 
 ### change variable type
