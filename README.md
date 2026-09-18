@@ -15,6 +15,7 @@ Please note that Script 1 and Script 2 are provided for illustrative purposes on
 
 R code:
 * **SOABB1_stat_analyses.R** : runs all the statistical models in the main text and supplementary materials.
+* **assumpt_checks.R** : runs assumption checks for statistical models.
 
 ### Datasets
 
